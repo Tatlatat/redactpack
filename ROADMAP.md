@@ -2,9 +2,9 @@
 
 Date: 2026-06-10
 
-STATUS: PASSED_ALL_FABLE_CHECKPOINTS_REMOTE_CI_GATE_REMAINS
+STATUS: COMPLETE
 
-Checkpoint 1 was independently approved by Claude Fable 5 on 2026-06-10. Checkpoint 2 passed Claude Fable 5 re-review on 2026-06-11. Checkpoint 3 passed Claude Fable 5 on 2026-06-11 and post-fix re-review confirmed no code-level blockers remain.
+Checkpoint 1 was independently approved by Claude Fable 5 on 2026-06-10. Checkpoint 2 passed Claude Fable 5 re-review on 2026-06-11. Checkpoint 3 passed Claude Fable 5 on 2026-06-11 and post-fix re-review confirmed no code-level blockers remain. The public GitHub Actions matrix passed on Ubuntu, macOS, and Windows for Python 3.9 and 3.12.
 
 ## Phase 0 - Checkpoint 1 External Approval
 
@@ -102,5 +102,4 @@ Verification:
 
 Exit criteria:
 
-- Complete for local/code readiness.
-- Remaining pre-tag gate: publish the repository and run the GitHub Actions matrix green on Ubuntu/macOS/Windows.
+- Complete. The repository is published and the GitHub Actions matrix is green on Ubuntu/macOS/Windows.

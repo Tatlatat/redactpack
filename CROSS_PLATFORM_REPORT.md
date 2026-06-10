@@ -18,7 +18,7 @@ Environment:
 Verified locally:
 
 - `python -m compileall -q src`: passed.
-- `.venv/bin/python -m pytest tests -v`: 28 passed.
+- `.venv/bin/python -m pytest tests -v`: 29 passed.
 - Fresh source install in `/tmp/redactpack-install-venv`: passed.
 - Installed `redactpack benchmark` from `/tmp`: passed.
 - Installed `redactpack scan` sample bundle with zip: passed.
@@ -35,9 +35,28 @@ Verified locally:
 
 The workflow installs the package, runs tests, and runs the packaged benchmark.
 
+## Hosted CI Evidence
+
+Repository: `https://github.com/Tatlatat/redactpack`
+
+Run: `https://github.com/Tatlatat/redactpack/actions/runs/27295074259`
+
+Commit: `720577c1d436eefffb3b39aa76acf92557461374`
+
+Result: passed.
+
+Jobs passed:
+
+- Python 3.9 on `ubuntu-latest`.
+- Python 3.12 on `ubuntu-latest`.
+- Python 3.9 on `macos-latest`.
+- Python 3.12 on `macos-latest`.
+- Python 3.9 on `windows-latest`.
+- Python 3.12 on `windows-latest`.
+
 ## Limitations
 
-Remote CI has not been executed from this local workspace. Windows and Linux behavior is prepared through CI configuration and standard-library-only runtime design, but it is not claimed as remotely green until the workflow runs in GitHub Actions.
+No platform blocker is known after hosted CI. Remaining cross-platform risk is ordinary MVP coverage risk: future detector additions and file handling changes should continue to run through the hosted matrix.
 
 ## Cross-Platform Design Choices
 

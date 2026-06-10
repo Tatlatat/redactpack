@@ -303,3 +303,17 @@ workspace is still not a git repository, so the CI matrix
 it is green on the published repository.
 
 Full review: `EXTERNAL_REVIEW_CHECKPOINT_3_POSTFIX_RESULT.md`
+
+## Hosted CI Release Gate
+
+Date: 2026-06-11
+
+Reviewer: GitHub Actions hosted matrix
+
+STATUS: PASS
+
+Summary:
+
+The public repository was published at `https://github.com/Tatlatat/redactpack`. GitHub Actions run `27295074259` passed on commit `720577c1d436eefffb3b39aa76acf92557461374` across Ubuntu, macOS, and Windows for Python 3.9 and 3.12. Each job installed the package, ran the test suite, and ran the packaged benchmark.
+
+Full run: `https://github.com/Tatlatat/redactpack/actions/runs/27295074259`

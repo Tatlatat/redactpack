@@ -14,9 +14,9 @@ Each checkpoint must pass internal review and independent external review by Cla
 
 ## Current Status
 
-STATUS: PASSED_ALL_FABLE_CHECKPOINTS_REMOTE_CI_GATE_REMAINS
+STATUS: COMPLETE
 
-Checkpoint 1 passed internal review and external Claude Fable 5 review on 2026-06-10. Claude Code was updated to 2.1.170 and invoked through tmux with `--model fable`; Fable returned PASS with score 7/10. Checkpoint 2 passed Claude Fable 5 re-review on 2026-06-11 with score 8/10 after the required fix loop. Checkpoint 3 passed Claude Fable 5 with score 8/10, and the post-fix re-review confirmed no code-level blockers remain.
+Checkpoint 1 passed internal review and external Claude Fable 5 review on 2026-06-10. Claude Code was updated to 2.1.170 and invoked through tmux with `--model fable`; Fable returned PASS with score 7/10. Checkpoint 2 passed Claude Fable 5 re-review on 2026-06-11 with score 8/10 after the required fix loop. Checkpoint 3 passed Claude Fable 5 with score 8/10, and the post-fix re-review confirmed no code-level blockers remain. The public repository was published at `https://github.com/Tatlatat/redactpack`; GitHub Actions run `27295074259` passed on Ubuntu, macOS, and Windows for Python 3.9 and 3.12.
 
 Checkpoint 1 external pass conditions that must be satisfied in Checkpoint 2:
 
@@ -40,4 +40,4 @@ The full goal is complete only after:
 - CI covers macOS, Windows, and Linux.
 - Claude Fable 5 approves Checkpoints 1, 2, and 3.
 
-As of this file, all three Claude Fable 5 checkpoint reviews are approved. The remaining release gate is operational: publish the repository and run the configured GitHub Actions matrix green before tagging v0.1.0. This local workspace cannot prove remote Windows/Linux CI execution until that hosted run exists.
+As of this file, all three Claude Fable 5 checkpoint reviews are approved, the repository is public, tests pass locally, and the hosted GitHub Actions matrix is green. The full goal completion conditions are satisfied.

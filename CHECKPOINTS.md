@@ -42,7 +42,7 @@ Completed:
 
 - Product specs created: `PRODUCT_SPEC.md`, `TECHNICAL_SPEC.md`, `ARCHITECTURE.md`, `IMPLEMENTATION_PLAN.md`, `TEST_PLAN.md`, `SECURITY_PRIVACY.md`, `INSTALLATION_PLAN.md`.
 - RedactPack MVP implemented as Python CLI.
-- Tests created and run using TDD; current suite has 28 passing tests after Checkpoint 3 hardening.
+- Tests created and run using TDD; current suite has 29 passing tests after hosted-CI hardening.
 - README, license, contributing guide, changelog, security policy, examples, config example, and CI workflow created.
 - Fresh install smoke test passed.
 - Checkpoint 2 internal review passed.
@@ -56,7 +56,7 @@ External review result:
 
 ## Checkpoint 3 - Final Review, Hardening, and Release Readiness
 
-STATUS: PASSED_EXTERNAL_REVIEW_WITH_RELEASE_GATE
+STATUS: COMPLETE
 
 Completed:
 
@@ -66,7 +66,9 @@ Completed:
 - Checkpoint 3 internal review passed.
 - Claude Fable 5 release-readiness review passed with score 8/10.
 - Code pre-tag conditions from Fable were fixed and post-fix Fable re-review passed.
+- Public GitHub repository published at `https://github.com/Tatlatat/redactpack`.
+- GitHub Actions run `27295074259` passed on Ubuntu, macOS, and Windows for Python 3.9 and 3.12.
 
-Remaining release gate:
+Release gate:
 
-- Publish to a hosted repository and run the GitHub Actions matrix until Ubuntu/macOS/Windows on Python 3.9/3.12 is green before tagging v0.1.0.
+- Complete. The hosted matrix is green before any v0.1.0 tag.

@@ -20,7 +20,7 @@ Date: 2026-06-11
 
 ## Test Evidence
 
-`.venv/bin/python -m pytest tests -v`: 28 passed.
+`.venv/bin/python -m pytest tests -v`: 29 passed.
 
 ## Known Limits
 
@@ -31,4 +31,4 @@ Date: 2026-06-11
 
 ## Stability Verdict
 
-Stable enough for an initial OSS MVP release candidate, subject to external Checkpoint 3 review.
+Stable enough for an initial OSS MVP release candidate. External Checkpoint 3 review passed, post-fix re-review passed, and hosted cross-platform CI passed.

@@ -22,7 +22,7 @@ Date: 2026-06-11
 ## Verification
 
 - [x] `python -m compileall -q src`
-- [x] `.venv/bin/python -m pytest tests -v` passes with 28 tests
+- [x] `.venv/bin/python -m pytest tests -v` passes with 29 tests
 - [x] Fresh venv install from source works
 - [x] Installed CLI benchmark works outside repo
 - [x] Sample scan works
@@ -38,7 +38,7 @@ Date: 2026-06-11
 
 ## Release Blockers
 
-- [ ] Remote GitHub Actions matrix has not been executed in this local workspace.
+- [x] Remote GitHub Actions matrix passed on Ubuntu/macOS/Windows for Python 3.9/3.12.
 - [x] Unreadable-file crash fixed and post-fix reviewed by Fable.
 - [x] Non-object policy JSON crash fixed and post-fix reviewed by Fable.
 

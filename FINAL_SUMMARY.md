@@ -25,15 +25,16 @@ RedactPack is an open-source, local-first support/debug bundle sanitizer. It is 
 - Checkpoint 1: Claude Fable 5 PASS, 7/10.
 - Checkpoint 2: Claude Fable 5 initial FAIL, 6/10; fixes completed; re-review PASS, 8/10.
 - Checkpoint 3: Claude Fable 5 PASS, 8/10; post-fix re-review PASS.
+- Hosted CI: GitHub Actions run `27295074259` PASS on Ubuntu/macOS/Windows for Python 3.9 and 3.12.
 
 ## Verification
 
-- 28 local tests pass.
+- 29 local tests pass.
 - Fresh install works.
 - Packaged benchmark works outside the repository.
 - Sample scan works and creates sanitized zip output.
 - Reports contain no raw sample secrets, unsalted value hashes, or absolute local input/output paths.
 
-## Remaining Limitation
+## Final Status
 
-Remote CI has not been executed from this local workspace. The CI matrix is present and ready. Fable approved the checkpoint, but v0.1.0 should not be tagged until the hosted matrix is green.
+RedactPack is published at `https://github.com/Tatlatat/redactpack`, all three Claude Fable 5 checkpoints are approved, and the hosted cross-platform matrix is green. The requested OSS project goal is complete.

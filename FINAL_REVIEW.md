@@ -2,7 +2,7 @@
 
 Date: 2026-06-11
 
-STATUS: READY_FOR_EXTERNAL_REVIEW
+STATUS: COMPLETE_RELEASE_READY
 
 ## Scope Reviewed
 
@@ -24,20 +24,20 @@ The Checkpoint 2 Fable FAIL identified four trust-path issues. All were fixed an
 
 ## Current Quality Bar
 
-- Tests: 28 passing.
+- Tests: 29 passing.
 - Fresh install: verified locally with `python -m pip install .`.
 - Packaged benchmark: verified from `/tmp`, 11/11 expected labels, recall 1.0.
 - Runtime smoke: sample scan writes sanitized files, reports, and zip.
 - Report privacy: no raw sample secrets or `value_hash` in zip report.
 - Error handling: invalid allowlist exits 2 cleanly; non-object policy JSON exits 2 cleanly; missing input exits 2; unreadable files skip-and-report; output-inside-input exits 2.
+- Hosted CI: `https://github.com/Tatlatat/redactpack/actions/runs/27295074259` passed on Ubuntu/macOS/Windows for Python 3.9 and 3.12.
 
 ## Remaining Risks
 
-- Remote CI has not been executed from this local workspace.
 - Benchmark corpus is still small and mostly regression-oriented.
 - Detector false negatives remain the main product risk.
 - MVP skips binary files, symlinks, OCR/image/PDF content, and does lossy replacement for non-UTF-8 text.
 
 ## Internal Verdict
 
-Ready for Claude Fable 5 Checkpoint 3 external release-readiness review.
+Release-ready for the requested goal. Claude Fable 5 approved all three checkpoints, post-fix release blockers are closed, and hosted cross-platform CI is green.

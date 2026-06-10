@@ -39,11 +39,9 @@ The workflow installs the package, runs tests, and runs the packaged benchmark.
 
 Repository: `https://github.com/Tatlatat/redactpack`
 
-Run: `https://github.com/Tatlatat/redactpack/actions/runs/27295074259`
+Actions: `https://github.com/Tatlatat/redactpack/actions`
 
-Commit: `720577c1d436eefffb3b39aa76acf92557461374`
-
-Result: passed.
+Result: hosted matrix passed on `main`.
 
 Jobs passed:
 

@@ -19,7 +19,7 @@ STATUS: PASSED_INTERNAL_REVIEW_AND_HOSTED_CI
    - Yes. CLI commands are small and documented: `scan`, `detectors`, and `benchmark`.
 
 5. Does it work across macOS, Windows, and Linux?
-   - Yes. macOS was locally verified, and GitHub Actions run `27295074259` passed on Ubuntu, macOS, and Windows with Python 3.9 and 3.12.
+   - Yes. macOS was locally verified, and the hosted GitHub Actions matrix passed on Ubuntu, macOS, and Windows with Python 3.9 and 3.12.
 
 6. Is the codebase ready for public OSS release?
    - Yes as a release candidate. External Checkpoint 3 review passed, post-fix re-review passed, and hosted CI passed after publishing to a public repository.
@@ -38,7 +38,7 @@ STATUS: PASSED_INTERNAL_REVIEW_AND_HOSTED_CI
 - Fresh install in `/tmp/redactpack-final-venv`: passed.
 - Installed `redactpack benchmark` from `/tmp`: 11/11 expected labels, recall 1.0.
 - Installed `redactpack scan examples/sample-bundle --zip`: passed, exit 1 as expected for critical findings.
-- Hosted GitHub Actions run `27295074259`: passed on Ubuntu, macOS, and Windows for Python 3.9 and 3.12.
+- Hosted GitHub Actions matrix: passed on Ubuntu, macOS, and Windows for Python 3.9 and 3.12.
 - Leak grep of zipped report found no `value_hash` and no raw sample secrets.
 - Zipped report no longer includes absolute local input/output paths.
 - Unreadable files skip-and-report.

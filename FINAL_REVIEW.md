@@ -30,7 +30,7 @@ The Checkpoint 2 Fable FAIL identified four trust-path issues. All were fixed an
 - Runtime smoke: sample scan writes sanitized files, reports, and zip.
 - Report privacy: no raw sample secrets or `value_hash` in zip report.
 - Error handling: invalid allowlist exits 2 cleanly; non-object policy JSON exits 2 cleanly; missing input exits 2; unreadable files skip-and-report; output-inside-input exits 2.
-- Hosted CI: `https://github.com/Tatlatat/redactpack/actions/runs/27295074259` passed on Ubuntu/macOS/Windows for Python 3.9 and 3.12.
+- Hosted CI: GitHub Actions matrix passed on Ubuntu/macOS/Windows for Python 3.9 and 3.12.
 
 ## Remaining Risks
 

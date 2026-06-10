@@ -67,7 +67,7 @@ Completed:
 - Claude Fable 5 release-readiness review passed with score 8/10.
 - Code pre-tag conditions from Fable were fixed and post-fix Fable re-review passed.
 - Public GitHub repository published at `https://github.com/Tatlatat/redactpack`.
-- GitHub Actions run `27295074259` passed on Ubuntu, macOS, and Windows for Python 3.9 and 3.12.
+- Hosted GitHub Actions matrix passed on Ubuntu, macOS, and Windows for Python 3.9 and 3.12.
 
 Release gate:
 

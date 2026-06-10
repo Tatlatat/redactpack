@@ -1,0 +1,12 @@
+{
+  "disabled_detectors": [],
+  "allowlist": ["example\\.internal"],
+  "custom_literals": [
+    {
+      "literal": "ACME-CUSTOMER-123",
+      "label": "customer_id",
+      "severity": "medium"
+    }
+  ],
+  "fail_on": "critical"
+}

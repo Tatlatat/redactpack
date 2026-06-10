@@ -1,0 +1,46 @@
+[
+  {
+    "name": "email and ip",
+    "text": "User alice@example.com logged in from 192.168.1.10",
+    "expected_detectors": ["email", "ipv4"]
+  },
+  {
+    "name": "bearer and provider tokens",
+    "text_parts": [
+      "Authorization: Bearer ",
+      "abcdef1234567890abcdef1234567890",
+      " AWS AKIAIOSFODNN7EXAMPLE ",
+      "github_",
+      "pat_",
+      "11ABCDEFG0abcdefghijklmnopqrstuvwxyzABCDE1234567890abcd"
+    ],
+    "expected_detectors": ["bearer_token", "aws_access_key", "github_token"]
+  },
+  {
+    "name": "payment and identity",
+    "text_parts": [
+      "Stripe ",
+      "sk_",
+      "test_",
+      "4eC39HqLyjWDarjtT1zdp7dc",
+      " card 4242 4242 4242 4242 ssn 123-45-6789"
+    ],
+    "expected_detectors": ["stripe_key", "credit_card", "us_ssn"]
+  },
+  {
+    "name": "webhook query and slack",
+    "text_parts": [
+      "https://example.com/hook?token=secret123 ",
+      "xoxb",
+      "-123456789012",
+      "-123456789012",
+      "-abcdefghijklmnopqrstuvwx"
+    ],
+    "expected_detectors": ["url_sensitive_query", "slack_token"]
+  },
+  {
+    "name": "generic api key assignment",
+    "text": "api_key = \"rp_1234567890abcdef1234567890abcdef\"",
+    "expected_detectors": ["generic_api_key"]
+  }
+]

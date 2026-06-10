@@ -26,6 +26,17 @@ def test_scan_path_mirrors_directory_and_writes_reports(tmp_path):
     assert "review aid" in (out / "redactpack-summary.md").read_text(encoding="utf-8")
 
 
+def test_scan_path_preserves_crlf_bytes_in_sanitized_files(tmp_path):
+    source = tmp_path / "bundle"
+    source.mkdir()
+    (source / "app.log").write_bytes(b"contact alice@example.com\r\n")
+    out = tmp_path / "out"
+
+    scan_path(source, out, Policy.default())
+
+    assert (out / "app.log").read_bytes() == b"contact [REDACTED:EMAIL:1]\r\n"
+
+
 def test_dry_run_writes_reports_but_not_sanitized_files(tmp_path):
     source = tmp_path / "bundle"
     source.mkdir()

@@ -48,7 +48,7 @@ def scan_path(
         if not dry_run:
             destination = output / relative
             destination.parent.mkdir(parents=True, exist_ok=True)
-            destination.write_text(result.text, encoding="utf-8")
+            destination.write_bytes(result.text.encode("utf-8"))
 
     report = ScanReport(
         input_path=_display_path(source),
